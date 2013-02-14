@@ -11,6 +11,7 @@
 #import "AppDelegate.h"
 #import "GameConfig.h"
 #import "RootViewController.h"
+#import "HelloWorldLayer.h"
 
 @implementation AppDelegate
 
@@ -112,7 +113,7 @@
 	[self removeStartupFlicker];
 	
 	// Run the intro Scene
-//	[[CCDirector sharedDirector] runWithScene: [HelloWorldLayer scene]];
+	[[CCDirector sharedDirector] runWithScene: [HelloWorldLayer scene]];
 }
 
 

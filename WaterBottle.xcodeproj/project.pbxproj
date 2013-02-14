@@ -164,8 +164,9 @@
 		5CD1909B16C6C0C20082C287 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD1909A16C6C0C20082C287 /* RootViewController.m */; };
 		5CD190A116C6C0C20082C287 /* GLES-Render.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5CD190A016C6C0C20082C287 /* GLES-Render.mm */; };
 		5CD190A416C6C0C20082C287 /* blocks.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CD190A316C6C0C20082C287 /* blocks.png */; };
-		5CD190AC16C6C1B90082C287 /* WaterSurfaceCoordinate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5CD190AB16C6C1B90082C287 /* WaterSurfaceCoordinate.mm */; };
 		5CD190B216C6CECD0082C287 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5CD190B116C6CECD0082C287 /* AppDelegate.mm */; };
+		5CFF14AE16CC78B800937C46 /* HelloWorldLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5CFF14AB16CC78B800937C46 /* HelloWorldLayer.mm */; };
+		5CFF14B216CC7A2000937C46 /* WaterLine.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5CFF14B116CC7A2000937C46 /* WaterLine.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -488,9 +489,11 @@
 		5CD190A016C6C0C20082C287 /* GLES-Render.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "GLES-Render.mm"; sourceTree = "<group>"; };
 		5CD190A216C6C0C20082C287 /* GameConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameConfig.h; sourceTree = "<group>"; };
 		5CD190A316C6C0C20082C287 /* blocks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blocks.png; path = Resources/blocks.png; sourceTree = "<group>"; };
-		5CD190AA16C6C1B90082C287 /* WaterSurfaceCoordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterSurfaceCoordinate.h; sourceTree = "<group>"; };
-		5CD190AB16C6C1B90082C287 /* WaterSurfaceCoordinate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WaterSurfaceCoordinate.mm; sourceTree = "<group>"; };
+		5CD190AA16C6C1B90082C287 /* WaterLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterLine.h; sourceTree = "<group>"; };
 		5CD190B116C6CECD0082C287 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		5CFF14AA16CC78B800937C46 /* HelloWorldLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
+		5CFF14AB16CC78B800937C46 /* HelloWorldLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HelloWorldLayer.mm; sourceTree = "<group>"; };
+		5CFF14B116CC7A2000937C46 /* WaterLine.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WaterLine.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -547,18 +550,20 @@
 		5CD18EC216C6C0BE0082C287 /* WaterBottle */ = {
 			isa = PBXGroup;
 			children = (
-				5CD190B116C6CECD0082C287 /* AppDelegate.mm */,
 				5CD1909616C6C0C20082C287 /* AppDelegate.h */,
-				5CD1909916C6C0C20082C287 /* RootViewController.h */,
-				5CD1909A16C6C0C20082C287 /* RootViewController.m */,
+				5CD190B116C6CECD0082C287 /* AppDelegate.mm */,
+				5CD190A216C6C0C20082C287 /* GameConfig.h */,
 				5CD1909F16C6C0C20082C287 /* GLES-Render.h */,
 				5CD190A016C6C0C20082C287 /* GLES-Render.mm */,
-				5CD190A216C6C0C20082C287 /* GameConfig.h */,
-				5CD18EC316C6C0BF0082C287 /* Resources */,
+				5CFF14AA16CC78B800937C46 /* HelloWorldLayer.h */,
+				5CFF14AB16CC78B800937C46 /* HelloWorldLayer.mm */,
 				5CD18EDB16C6C0BF0082C287 /* libs */,
+				5CD18EC316C6C0BF0082C287 /* Resources */,
+				5CD1909916C6C0C20082C287 /* RootViewController.h */,
+				5CD1909A16C6C0C20082C287 /* RootViewController.m */,
 				5CD1909216C6C0C20082C287 /* Supporting Files */,
-				5CD190AA16C6C1B90082C287 /* WaterSurfaceCoordinate.h */,
-				5CD190AB16C6C1B90082C287 /* WaterSurfaceCoordinate.mm */,
+				5CD190AA16C6C1B90082C287 /* WaterLine.h */,
+				5CFF14B116CC7A2000937C46 /* WaterLine.mm */,
 			);
 			path = WaterBottle;
 			sourceTree = "<group>";
@@ -1217,8 +1222,9 @@
 				5CD1909516C6C0C20082C287 /* main.m in Sources */,
 				5CD1909B16C6C0C20082C287 /* RootViewController.m in Sources */,
 				5CD190A116C6C0C20082C287 /* GLES-Render.mm in Sources */,
-				5CD190AC16C6C1B90082C287 /* WaterSurfaceCoordinate.mm in Sources */,
 				5CD190B216C6CECD0082C287 /* AppDelegate.mm in Sources */,
+				5CFF14AE16CC78B800937C46 /* HelloWorldLayer.mm in Sources */,
+				5CFF14B216CC7A2000937C46 /* WaterLine.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
